@@ -8,6 +8,7 @@
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
+      "flex-layout.row#my-custom-component",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -71,6 +72,13 @@
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#my-custom-component": {
+    "children": ["my-custom-component"],
+    "props": {
+      "blockClass": ["my-custom-component"]
     }
   },
 
