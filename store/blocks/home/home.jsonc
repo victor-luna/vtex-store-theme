@@ -8,7 +8,7 @@
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "flex-layout.row#my-custom-component",
+      "slider-layout#my-custom-component",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -75,10 +75,18 @@
     }
   },
 
-  "flex-layout.row#my-custom-component": {
-    "children": ["my-custom-component"],
+  "slider-layout#my-custom-component": {
+    "children": ["my-custom-component", "my-custom-component"],
     "props": {
-      "blockClass": ["my-custom-component"]
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      }
     }
   },
 
